@@ -4,7 +4,7 @@ var methodOverride = require("method-override");
 
 var port = 3000;
 
-var app = express();
+var app = module.exports = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + "/public"));
